@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter PIN"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="25dp"
+        android:textSize="20sp"/>
+
+    <com.codebzrk.pinentrytextedit.PinEntryTextEdit
+        android:id="@+id/pinEditText"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:cursorVisible="false"
+        android:digits="1234567890"
+        android:inputType="number"
+        android:maxLength="4"
+        android:textIsSelectable="false"
+        android:textColor="@color/darkGray"
+        android:textSize="@dimen/text_size"/>
+
+    <Button
+        android:id="@+id/confirm_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/gray_button"
+        android:text="CONFIRM"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>
